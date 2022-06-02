@@ -13,7 +13,7 @@ public class MainActivity6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("TRA CỨU SẢN PHẨM");
+        actionBar.setTitle("Số 5");
         actionBar.setDisplayHomeAsUpEnabled(true);
     }
 

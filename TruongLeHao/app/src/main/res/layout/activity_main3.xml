@@ -31,6 +31,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.75"
             android:gravity="center|left"
+            android:paddingLeft="20dp"
             android:textSize="15sp"
             android:text="Năm duong lịch" />
 
@@ -88,6 +89,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.77"
             android:textSize="15sp"
+            android:paddingLeft="20dp"
             android:gravity="center|left"
             android:text="Năm âm lịch" />
 

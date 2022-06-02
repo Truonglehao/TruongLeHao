@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     Button button;
-    ImageView img1, img2, img3, img4, img5;
+    ImageView so1, so2, so3, so4, so5;
     Intent i;
 
     @Override
@@ -19,43 +19,38 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button = findViewById(R.id.button);
-        img1 = findViewById(R.id.img1);
-        img2 = findViewById(R.id.img2);
-        img3 = findViewById(R.id.img3);
-        img4 = findViewById(R.id.img4);
-        img5 = findViewById(R.id.img5);
+        so1 = findViewById(R.id.so1);
+        so2 = findViewById(R.id.so2);
+        so3 = findViewById(R.id.so3);
+        so4 = findViewById(R.id.so4);
+        so5 = findViewById(R.id.so5);
 
-        img1.setOnClickListener(v -> {
+        so1.setOnClickListener(v -> {
             i = new Intent(MainActivity.this, MainActivity2.class);
             startActivity(i);
 
         });
-        img2.setOnClickListener(v -> {
+        so2.setOnClickListener(v -> {
             i = new Intent(MainActivity.this, MainActivity3.class);
             startActivity(i);
 
         });
-        img3.setOnClickListener(v -> {
+        so3.setOnClickListener(v -> {
             i = new Intent(MainActivity.this, MainActivity4.class);
             startActivity(i);
 
         });
-        img4.setOnClickListener(v -> {
+        so4.setOnClickListener(v -> {
             i = new Intent(MainActivity.this, MainActivity5.class);
             startActivity(i);
 
         });
-        img5.setOnClickListener(v -> {
+        so5.setOnClickListener(v -> {
             i = new Intent(MainActivity.this, MainActivity6.class);
             startActivity(i);
-
         });
-
-
     }
-
     public void xuLyThoat(View view) {
         finish();
-
     }
 }
