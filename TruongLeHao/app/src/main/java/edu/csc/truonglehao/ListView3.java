@@ -9,15 +9,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class MainActivity6 extends AppCompatActivity {
+public class ListView3 extends AppCompatActivity {
     Intent i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main6);
+        setContentView(R.layout.activity_list_view3);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Số 5");
+        actionBar.setTitle("ListView3");
         actionBar.setDisplayHomeAsUpEnabled(true);
     }
     @Override
@@ -41,12 +41,12 @@ public class MainActivity6 extends AppCompatActivity {
                 //code xử lý khi bấm menu2
                 break;
             case R.id.menu3:
-                i = new Intent(MainActivity6.this, MainActivity4.class);
+                i = new Intent(ListView3.this, MainActivity4.class);
                 startActivity(i);
                 //code xử lý khi bấm menu3
                 break;
             case R.id.menu4:
-                i = new Intent(MainActivity6.this, MainActivity5.class);
+                i = new Intent(ListView3.this, MainActivity5.class);
                 startActivity(i);
                 //code xử lý khi bấm menu3
                 break;

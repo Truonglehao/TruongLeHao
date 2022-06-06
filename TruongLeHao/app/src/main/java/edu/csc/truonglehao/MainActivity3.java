@@ -4,17 +4,21 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity3 extends AppCompatActivity {
     Button button;
     EditText editText;
     TextView textView;
+    Intent i;
 
     @SuppressLint("WrongViewCast")
 
@@ -29,7 +33,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String can []={"Canh","Tân","Nhâm","Quý","Giáp","Ất","Bỉnh","Đinh","Mậu","Kỷ"};
-                String chi[]={"Thân","Dậu","Tuất","Hợi","Tý","Sửu","Dần","Mẹo","Thìn","Tỵ","Ngọ","Mùi"};
+                String chi[]={"Thân","Dậu","Tuất","Hợi","Tý","Sửu","Dần","Mão","Thìn","Tỵ","Ngọ","Mùi"};
                 String di = editText.getText().toString();
                 int m = Integer.parseInt(di);
                 String am= can[m%10] + " " +chi[m%12];
@@ -42,15 +46,39 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mymenu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId())
         {
             case android.R.id.home:
                 onBackPressed();
                 return true;
+            case R.id.menu1:
+                Toast.makeText(this,"Bạn vừa chọn menu 1",Toast.LENGTH_LONG).show();
+                //code xử lý khi bấm menu1
+                break;
+            case R.id.menu2:
+                Toast.makeText(this,"Bạn vừa chọn menu 2",Toast.LENGTH_LONG).show();
+                //code xử lý khi bấm menu2
+                break;
+            case R.id.menu3:
+                i = new Intent(MainActivity3.this, MainActivity4.class);
+                startActivity(i);
+                //code xử lý khi bấm menu3
+                break;
+            case R.id.menu4:
+                i = new Intent(MainActivity3.this, MainActivity5.class);
+                startActivity(i);
+                //code xử lý khi bấm menu3
+                break;
             default:break;
         }
-        return super.onOptionsItemSelected(item);
 
+        return super.onOptionsItemSelected(item);
     }
+
 }

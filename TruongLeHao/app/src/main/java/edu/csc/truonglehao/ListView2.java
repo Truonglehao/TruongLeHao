@@ -7,19 +7,45 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity6 extends AppCompatActivity {
+public class ListView2 extends AppCompatActivity {
     Intent i;
+    ListView ListViewData2;
+    String []arrData2;
+    ArrayAdapter<String>adapter2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main6);
+        setContentView(R.layout.activity_list_view2);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Số 5");
+        actionBar.setTitle("ListView2");
         actionBar.setDisplayHomeAsUpEnabled(true);
+        addControls();
+        addtvents();
+    }private void
+    addtvents() {
+        ListViewData2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(ListView2.this, "Bạn vừa chọn " + arrData2[position], Toast.LENGTH_LONG).show();
+            }
+        });
     }
+
+
+    private void addControls() {
+        ListViewData2=findViewById(R.id.ListViewData2);
+        arrData2=getResources().getStringArray(R.array.myArray);
+        adapter2=new ArrayAdapter<String>(ListView2.this, android.R.layout.simple_list_item_1,arrData2);
+        ListViewData2.setAdapter(adapter2);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.mymenu, menu);
@@ -41,12 +67,12 @@ public class MainActivity6 extends AppCompatActivity {
                 //code xử lý khi bấm menu2
                 break;
             case R.id.menu3:
-                i = new Intent(MainActivity6.this, MainActivity4.class);
+                i = new Intent(ListView2.this, MainActivity4.class);
                 startActivity(i);
                 //code xử lý khi bấm menu3
                 break;
             case R.id.menu4:
-                i = new Intent(MainActivity6.this, MainActivity5.class);
+                i = new Intent(ListView2.this, MainActivity5.class);
                 startActivity(i);
                 //code xử lý khi bấm menu3
                 break;

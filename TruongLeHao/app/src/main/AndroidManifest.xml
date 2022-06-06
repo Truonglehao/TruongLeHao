@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TruongLeHao">
         <activity
+            android:name=".ListView3"
+            android:exported="false" />
+        <activity
+            android:name=".ListView2"
+            android:exported="false" />
+        <activity
+            android:name=".ListView1"
+            android:exported="false" />
+        <activity
+            android:name=".ListViewMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity6"
             android:exported="false" />
         <activity

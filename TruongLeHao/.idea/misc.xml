@@ -4,12 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/drawable/botron.xml" value="0.18981481481481483" />
+        <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/drawable/menu.xml" value="0.18055555555555555" />
+        <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/drawable/mymenu.xml" value="0.18055555555555555" />
+        <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/drawable/string.xml" value="0.1125" />
+        <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_list_view1.xml" value="0.1" />
+        <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_list_view1_main.xml" value="0.1" />
+        <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_list_view2.xml" value="0.1" />
+        <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_list_view2_main.xml" value="0.1" />
+        <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_list_view3.xml" value="0.1" />
+        <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_list_view_main.xml" value="0.2" />
         <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_main2.xml" value="0.18" />
         <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_main3.xml" value="0.2" />
         <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_main4.xml" value="0.10326086956521739" />
         <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_main5.xml" value="0.10326086956521739" />
         <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/layout/activity_main6.xml" value="0.10326086956521739" />
+        <entry key="..\:/Users/Truong Le Hao/AndroidStudioProjects/TruongLeHao/app/src/main/res/menu/mymenu.xml" value="0.18611111111111112" />
       </map>
     </option>
   </component>
