@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TruongLeHao">
         <activity
+            android:name=".TTSV"
+            android:exported="false" />
+        <activity
             android:name=".ListView3"
             android:exported="false" />
         <activity

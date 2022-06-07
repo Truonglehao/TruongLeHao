@@ -73,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
                 //code xử lý khi bấm menu1
                 break;
             case R.id.menu2:
-                Toast.makeText(this,"Bạn vừa chọn menu 2",Toast.LENGTH_LONG).show();
-                //code xử lý khi bấm menu2
+                i = new Intent(MainActivity.this, TTSV.class);
+                startActivity(i);
                 break;
             case R.id.menu3:
                 i = new Intent(MainActivity.this, MainActivity4.class);

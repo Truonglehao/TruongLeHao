@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class ListView1 extends AppCompatActivity {
     Intent i;
     ListView ListViewData1;
-    String []arrData = {"Nguyễn Trường Qúy", "Đặng Anh Kiệt", "Phạm Huỳnh Nhật Huy","Bùi Minh Thiên","Đỗ Gia Bảo", "Lê Thanh Huy", "Trần Minh Quang","Lê Phú Phúc","hUỲNH Đức Lộc","Nguyễn Văn Trung Trực","Lê Thị Bảo Trân","Huỳnh Hữu Lý","Phạm Hữu Đức ","Trần Đức Nhân","Huỳnh Tấn Đạt",
+    String []arrData = {"Nguyễn Trường Qúy", "Đặng Anh Kiệt", "Phạm Huỳnh Nhật Huy","Bùi Minh Thiên","Đỗ Gia Bảo", "Lê Thanh Huy", "Trần Minh Quang","Lê Phú Phúc","Huỳnh Đức Lộc","Nguyễn Văn Trung Trực","Lê Thị Bảo Trân","Huỳnh Hữu Lý","Phạm Hữu Đức ","Trần Đức Nhân","Huỳnh Tấn Đạt",
     "Lê Huế Anh", "Đinh Nguyễn Trường Hải","Chế Phương Nam","Nguyễn Chí Cường","Nguyên Trần Quang Tuyến","Nguyễn Thanh Minh Nhựt","Huỳnh Thành Đạt","Nguyễn Huỳnh Trung Tính",
     "Đặng Thụy Thanh Duy","Nguyễn Xuân Trường ","Trượng Lệ Hào","Nguyễn Thanh Tuyền","Đoàn Tường Vy","Lê Đức Lợi","Trần Hiếu Nghĩa"};
     ArrayAdapter<String>adapter;

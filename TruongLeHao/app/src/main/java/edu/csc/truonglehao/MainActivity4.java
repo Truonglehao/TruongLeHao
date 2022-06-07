@@ -23,7 +23,7 @@ public class MainActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Số 4");
+        actionBar.setTitle("Số 3");
         actionBar.setDisplayHomeAsUpEnabled(true);
     }
     @Override
@@ -43,8 +43,8 @@ public class MainActivity4 extends AppCompatActivity {
                 //code xử lý khi bấm menu1
                 break;
             case R.id.menu2:
-                Toast.makeText(this,"Bạn vừa chọn menu 2",Toast.LENGTH_LONG).show();
-                //code xử lý khi bấm menu2
+                i = new Intent(MainActivity4.this, TTSV.class);
+                startActivity(i);
                 break;
             case R.id.menu3:
                 i = new Intent(MainActivity4.this, MainActivity4.class);
