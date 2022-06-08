@@ -39,19 +39,16 @@ public class MainActivity4 extends AppCompatActivity {
                 onBackPressed();
                 return true;
             case R.id.menu1:
-                Toast.makeText(this,"Bạn vừa chọn menu 1",Toast.LENGTH_LONG).show();
-                //code xử lý khi bấm menu1
-                break;
-            case R.id.menu2:
                 i = new Intent(MainActivity4.this, TTSV.class);
                 startActivity(i);
                 break;
-            case R.id.menu3:
+
+            case R.id.menu2:
                 i = new Intent(MainActivity4.this, MainActivity4.class);
                 startActivity(i);
                 //code xử lý khi bấm menu3
                 break;
-            case R.id.menu4:
+            case R.id.menu3:
                 i = new Intent(MainActivity4.this, MainActivity5.class);
                 startActivity(i);
                 //code xử lý khi bấm menu3

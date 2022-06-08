@@ -8,6 +8,18 @@
     android:orientation="vertical"
     tools:context=".TTSV">
 
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/teal_200"
+        android:textColor="@color/purple_700"
+        android:layout_weight="1"
+        android:text="THÔNG TIN CÁ NHÂN CỦA BẠN" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -19,7 +31,8 @@
         android:id="@+id/textView26"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:background="@color/teal_200"
+        android:layout_weight="1"
         android:text="" />
 
     <LinearLayout
@@ -32,7 +45,9 @@
             android:id="@+id/textView13"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:textStyle="bold"
+            android:textSize="20sp"
             android:padding="10dp"
             android:layout_weight="1"
             android:text="Họ Và Tên :" />
@@ -41,7 +56,9 @@
             android:id="@+id/textView14"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_weight="1"
+            android:textSize="20sp"
             android:text="Trượng Lệ Hào" />
 
     </LinearLayout>
@@ -59,6 +76,8 @@
             android:layout_height="match_parent"
             android:textStyle="bold"
             android:padding="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:text="Lớp :" />
 
@@ -66,7 +85,9 @@
             android:id="@+id/textView16"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_weight="1"
+            android:textSize="20sp"
             android:text="CĐ ĐTTT19MT" />
     </LinearLayout>
 
@@ -82,14 +103,18 @@
             android:layout_height="match_parent"
             android:textStyle="bold"
             android:padding="10dp"
+            android:gravity="center"
             android:layout_weight="1"
+            android:textSize="20sp"
             android:text="MSSV:" />
 
         <TextView
             android:id="@+id/textView18"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_weight="1"
+            android:textSize="20sp"
             android:text="030891028" />
 
     </LinearLayout>
@@ -98,6 +123,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.5"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
@@ -105,15 +131,19 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:textStyle="bold"
+            android:gravity="center"
             android:padding="10dp"
             android:layout_weight="1"
+            android:textSize="20sp"
             android:text="SĐT:" />
 
         <TextView
             android:id="@+id/textView19"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_weight="1"
+            android:textSize="20sp"
             android:text="0373759015" />
     </LinearLayout>
 
@@ -127,15 +157,19 @@
             android:id="@+id/textView30"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:textStyle="bold"
             android:padding="10dp"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:text="CMND:" />
 
         <TextView
             android:id="@+id/textView32"
             android:layout_width="0dp"
+            android:gravity="center"
             android:layout_height="match_parent"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:text="264640121" />
     </LinearLayout>
@@ -148,9 +182,11 @@
         <TextView
             android:id="@+id/textView23"
             android:layout_width="0dp"
+            android:gravity="center"
             android:layout_height="match_parent"
             android:textStyle="bold"
             android:padding="10dp"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:text="Quê Quán:" />
 
@@ -158,7 +194,8 @@
             android:id="@+id/textView22"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-
+            android:gravity="center"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:text="Ninh Thuận" />
     </LinearLayout>
@@ -173,7 +210,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:textStyle="bold"
+            android:gravity="center"
             android:padding="10dp"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:text="Ngày Sinh:" />
 
@@ -181,6 +220,8 @@
             android:id="@+id/textView29"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:text="08/03/2001" />
     </LinearLayout>
@@ -195,7 +236,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:textStyle="bold"
+            android:gravity="center"
             android:layout_weight="1"
+            android:textSize="20sp"
             android:padding="10dp"
             android:text="Tuổi :" />
 
@@ -203,6 +246,8 @@
             android:id="@+id/textView25"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
             android:layout_weight="1"
             android:text="21" />
     </LinearLayout>
