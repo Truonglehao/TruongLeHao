@@ -72,5 +72,9 @@ public class ListViewMainActivity extends AppCompatActivity {
         i = new Intent(ListViewMainActivity.this, ListView3.class);
         startActivity(i);
     }
+    public void ListView4(View view) {
+        i = new Intent(ListViewMainActivity.this, ListView4.class);
+        startActivity(i);
+    }
 
 }
