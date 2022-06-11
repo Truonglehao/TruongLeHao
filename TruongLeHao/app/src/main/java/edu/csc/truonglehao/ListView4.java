@@ -60,6 +60,7 @@ public class ListView4 extends AppCompatActivity {
     }
 
 
+
     private void addControls() {
         lvTraiCay=findViewById(R.id.lvNangCao);
         traiCayAdapter=new TraiCayAdapter(ListView4.this,R.layout.item);

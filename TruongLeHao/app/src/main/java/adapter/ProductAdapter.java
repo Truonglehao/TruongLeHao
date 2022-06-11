@@ -15,26 +15,25 @@ import model.Product;
 
 public class ProductAdapter extends ArrayAdapter {
     Activity activity;//activity chứa listview
+
     public ProductAdapter(Activity activity, ArrayList products) {
         super(activity, 0, products);
         this.activity = activity;
     }
 
     //hàm hiện thị từng item lên listview
-    public View getView(int position, View convertView, ViewGroup viewGroup)
-    {
+    public View getView(int position, View convertView, ViewGroup viewGroup) {
         //position là vị tri của mỗi item. nó sẽ chạy hết mảng
         //lấy layout cho từng item
-        if (convertView == null)
-        {
+        if (convertView == null) {
             LayoutInflater inflater = activity.getLayoutInflater();
-            convertView = inflater.inflate(R.layout.item_product,null);
+            convertView = inflater.inflate(R.layout.item_product, null);
         }
         //lấy các textview trong mỗi view
-        TextView tvProductName = (TextView)convertView
+        TextView tvProductName = (TextView) convertView
                 .findViewById(R.id.tvProductName);
-        TextView tvUnit = (TextView)convertView.findViewById(R.id.tvUnit);
-        TextView tvPrice = (TextView)convertView.findViewById(R.id.tvPrice);
+        TextView tvUnit = (TextView) convertView.findViewById(R.id.tvUnit);
+        TextView tvPrice = (TextView) convertView.findViewById(R.id.tvPrice);
         //hiển thị dư liệu lên từng item của listview ở vị trí position
         Product p = (Product) getItem(position);
         tvProductName.setText(p.getProductName());

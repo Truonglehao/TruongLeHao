@@ -1,5 +1,6 @@
 package edu.csc.truonglehao;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,14 +16,17 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
+
 
 import adapter.ProductAdapter;
 import model.Product;
 import model.SaleManager;
 
 public class MainActivity5 extends AppCompatActivity {
-    Intent i;
+
     ListView lv;
     ProductAdapter adapter;
 
@@ -30,14 +34,16 @@ public class MainActivity5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
-
+        ActionBar actionBar =getSupportActionBar();
+        actionBar.setTitle("KT SỐ 5 - SHOP");
+        actionBar.setDisplayHomeAsUpEnabled(true);
         lv = (ListView) findViewById(R.id.lvProducts);
         //Khởi tạo các sản phẩm
         SaleManager saleManager = SaleManager.get();
         saleManager.generateProducts();
         //lấy các product từ class saleManager
         ArrayList products = saleManager.getProducts();
-        adapter = new ProductAdapter(this,products);//khởi tạo adapter
+        adapter = new ProductAdapter(this, products);//khởi tạo adapter
         lv.setAdapter(adapter);//hiển lên listview
         //long click để xoá
         lv.setOnItemLongClickListener(new ItemLongClickRemove());
@@ -46,8 +52,8 @@ public class MainActivity5 extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
-                Intent intent = new Intent(MainActivity5.this, ProductActivity.class);
-                intent.putExtra(ProductActivity.EXTRA_POSITION, position);
+                Intent intent = new Intent(MainActivity5.this, ProducActivity.class);
+                intent.putExtra(ProducActivity.EXTRA_POSITION, position);
                 startActivity(intent);
             }
         });
@@ -59,14 +65,18 @@ public class MainActivity5 extends AppCompatActivity {
         return true;
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.btnAdd:
+            case android.R.id.home:
+                onBackPressed();
+                return true;  case R.id.btnAdd:
                 //Toast.makeText(this, "Item 2 selected", Toast.LENGTH_SHORT).show();
                 //Them san pham
                 openMyCustom();
                 return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
